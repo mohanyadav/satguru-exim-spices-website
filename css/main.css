@@ -18,6 +18,15 @@ a {
     text-decoration: none;
 }
 
+.spacer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1px;
+    display: block;
+    width: 100%;
+    background: rgba(84, 50, 0, 0.2);
+}
+
 /* Navigation Styles */
 nav {
     width: 100%;
@@ -169,3 +178,129 @@ nav p img {
     right: -30px;
 }
 
+/* Recommended Section */
+.recommended {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.recommended h2 {
+    font-size: 1.6em;
+    margin-bottom: 0px;
+}
+
+.recommended .contents_wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.contents_wrapper .card {
+    width: 23%;
+    display: inline-block;
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    margin-top: 40px;
+    position: relative;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.contents_wrapper .card:hover {
+    box-shadow: 12px 12px 80px rgba(84, 50, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.title_holder {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    background: rgba(237, 218, 185, 0.7);
+}
+
+.title_holder p {
+    color: rgba(84, 50, 0);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.contact .left-section {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding-right: 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contact .left-section h2 {
+    font-size: 3em;
+    text-align: right;
+}
+
+.contact .left-section .decorator-div {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: rgba(237, 218, 185, 0.24);
+    z-index: -1;
+    top: 0;
+}
+
+.contact .right-section {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+form {
+    box-shadow: 12px 12px 80px rgba(84, 50, 0, 0.2);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    color: rgb(65, 61, 75);
+    background: rgb(249, 252, 240);
+    border: 0;
+    border-bottom: 1px solid rgba(84, 50, 0, 0.15);
+    outline: none;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    color: rgba(84, 50, 0, 0.8);
+}
+
+input[type="submit"] {
+    background: rgb(255, 203, 109);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    padding: 20px 20px;
+}
