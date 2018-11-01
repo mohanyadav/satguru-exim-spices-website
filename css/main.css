@@ -39,6 +39,7 @@ nav {
     font-size: 1.5em;
     display: inline-block;
     cursor: pointer;
+    color: rgba(84, 50, 0);
 }
 
 nav p {
@@ -287,12 +288,15 @@ input[type="email"] {
     padding: 20px 20px;
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    color: rgba(84, 50, 0, 0.8);
 }
 
 input::placeholder {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
-    color: rgba(84, 50, 0, 0.8);
+    font-size: 0.9em;
+    color: rgba(84, 50, 0, 0.6);
 }
 
 input[type="submit"] {
@@ -303,4 +307,33 @@ input[type="submit"] {
     outline: none;
     border: 0;
     padding: 20px 20px;
+}
+
+/* Footer Styles */
+footer .container {
+    margin-top: 0px;
+}
+
+footer .first,
+footer .second,
+footer .third {
+    width: 33.33%;
+    height: 70px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.first .logo,
+.second p,
+.third p {
+    margin: 0;
+    padding: 0;
+}
+
+.second p,
+.third p {
+    opacity: 0.5;
 }
